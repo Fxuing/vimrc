@@ -12,6 +12,10 @@ call plug#end()
 
 " ===========================  keymap =================================
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-h> <C-W>h
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-l> <C-W>l
 
 " ===========================  setting  ===============================
 "
