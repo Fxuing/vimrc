@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline' 
 Plug 'vim-airline/vim-airline-themes'
 Plug 'yggdroot/indentline'
+Plug 'skwp/vim-easymotion'
 Plug 'morhetz/gruvbox'
 
 call plug#end()
@@ -40,3 +41,4 @@ set bg=dark
 " Ohter
 set encoding=utf-8
 set nu
+let mapleader=","
