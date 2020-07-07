@@ -38,3 +38,14 @@ set bg=dark
 set encoding=utf-8
 set nu
 let mapleader=","
+
+" quick run
+map <F5> :call CompileRun()<CR>
+func! CompileRun()
+    exec "w"
+    if &filetype == 'go'
+        exec "!time go run %"
+    elseif &filetype == 'python'
+        exec "!time python3 %"    
+    endif
+endfunc
