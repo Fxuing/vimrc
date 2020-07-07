@@ -8,7 +8,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'yggdroot/indentline'
 Plug 'skwp/vim-easymotion'
 Plug 'morhetz/gruvbox'
-
+Plug 'ycm-core/YouCompleteMe'
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 " ===========================  keymap =================================
@@ -18,16 +19,11 @@ nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
-" INSERT下括号补全
-inoremap ( ()<LEFT>
-inoremap [ []<LEFT>
-inoremap { {}<LEFT>
-inoremap " ""<LEFT>
 " INSERT下移动光标
-inoremap <S-h> <LEFT>
-inoremap <S-j> <DOWN>
-inoremap <S-k> <UP>
-inoremap <S-l> <RIGHT>
+inoremap <C-h> <LEFT>
+inoremap <C-j> <DOWN>
+inoremap <C-k> <UP>
+inoremap <C-l> <RIGHT>
 
 " ===========================  setting  ===============================
 "
