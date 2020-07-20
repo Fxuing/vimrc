@@ -20,10 +20,10 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 " INSERT下移动光标
-inoremap <C-h> <LEFT>
-inoremap <C-j> <DOWN>
-inoremap <C-k> <UP>
-inoremap <C-l> <RIGHT>
+inoremap <M-h> <LEFT>
+inoremap <M-j> <DOWN>
+inoremap <M-k> <UP>
+inoremap <M-l> <RIGHT>
 
 " ===========================  setting  ===============================
 "
@@ -38,6 +38,11 @@ set bg=dark
 set encoding=utf-8
 set nu
 let mapleader=","
+" 缩进设置为4个空格
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 
 " quick run
 map <F5> :call CompileRun()<CR>
